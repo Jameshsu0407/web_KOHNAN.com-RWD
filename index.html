@@ -1,50 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zl">
+
 <head>
     <meta charset="UTF-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>網頁標題</title>
-    
+    <title>岡南塑膠發泡有限公司</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <!-- CSS文件載入 -->
-    
-
-
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome5.all.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- js文件載入 -->
-    
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
     <!-- header/start -->
-    
+    <header class="container">
+        <!-- navbar定義導覽列的基礎樣式；navbar-expand-lg導覽列的斷點為lg；navbar-light文字淺灰色 -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <!-- navbar-brand以文字或圖片作為LOGO時的基本樣式 -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+            <!-- navbar-toggler當尺寸小於992px時，導覽列會切為漢堡樣式；data-toggle="collapse"宣告使用collaose效果；data-target="#navbarNav"為觸發器，
+            指定展開選單的id名稱；aria-controls="navbarNav"定義內容無法藉由HTML結構決定的關聯關係；aria-expanded="false"表目前為關閉狀態；aria-label="Toggle navigation"螢幕閱讀器閱讀 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- navbar-toggler-icon呈現漢堡選單的三條水平線、寬度與高度樣式 -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- collapse隱藏選單；navbar-collapse定義子選單的軸線與佔用份數，以及位於容器的中心位置 -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- navbar-nav定義選單為無符號樣式、外劇與內距屬性 -->
+                <ul class="navbar-nav">
+                    <!-- active表當前頁面  -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">關於岡南</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">商品商城</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="job.html">人力資源</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">聯絡我們</a>
+                    </li>
+                </ul>
+                <!-- ml-auto使整組購物車選單靠右對齊 -->
+                <div class="ml-auto">
+                    <!-- my-2調整上方外劇的距離；my-sm-0在576px時上方外距值為零 -->
+                    <a href="login.html" class="btn btn-outline-success my-2 text-success my-sm-0">登入</a>
+                    <a href="cart.html" class="btn btn-outline-success my-2 text-success my-sm-0">購物車</a>
+                    <a href="checkout.html" class="btn btn-outline-success my-2 text-success my-sm-0">結帳</a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- header/end -->
     <!-- 廣告/start -->
-    
+
     <!-- 廣告/end -->
     <!-- 產品分類/start -->
-    
+
     <!-- 產品分類/end -->
     <!-- 熱門產品/start -->
-    
+
     <!-- 熱門產品/end -->
     <!-- 關於岡南/start -->
-    
+
     <!-- 關於岡南/end -->
     <!-- google map/start -->
-    
+
     <!-- google map/end -->
     <!-- 頁腳/start -->
-    
-                <!-- 選單連結/start -->
-               
-                <!-- 選單連結/end -->
-                <!-- 訂閱/start -->
-                
-                <!-- 訂閱/end -->
-                <!-- 版權所有/start -->
-                
-                <!-- 版權所有/end -->
-            
+
+    <!-- 選單連結/start -->
+
+    <!-- 選單連結/end -->
+    <!-- 訂閱/start -->
+
+    <!-- 訂閱/end -->
+    <!-- 版權所有/start -->
+
+    <!-- 版權所有/end -->
+
     <!-- 頁腳/end -->
 </body>
+
 </html>
