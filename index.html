@@ -58,6 +58,7 @@
                 <!-- ml-auto使整組購物車選單靠右對齊 -->
                 <div class="ml-auto">
                     <!-- my-2調整上方外劇的距離；my-sm-0在576px時上方外距值為零 -->
+                    <!-- x為調整左右；y為調整上下 -->
                     <a href="login.html" class="btn btn-outline-success my-2 text-success my-sm-0">登入</a>
                     <a href="cart.html" class="btn btn-outline-success my-2 text-success my-sm-0">購物車</a>
                     <a href="checkout.html" class="btn btn-outline-success my-2 text-success my-sm-0">結帳</a>
@@ -66,9 +67,59 @@
         </nav>
     </header>
     <!-- header/end -->
-    <!-- 廣告/start -->
 
+    <!-- 廣告/start -->
+    <!-- container-fluid建立滿版寬度佈局 -->
+    <section class="container-fluid">
+        <div class="row">
+            <!-- carousel定義此區塊為的位置屬性為relative；slide過度動畫；data-ride="carousel"作用為廣告輪播組件會在頁面載入之後開始播放，
+            若移除時，那麼只有在點擊指標後才會開始播放 -->
+            <div id="carouselBanner" class="carousel slide" data-ride="carousel">
+                <!-- arousel-indicators使指標的圖示可呈現在中間靠下的位置 -->
+                <ol class="carousel-indicators">
+                    <!-- data-target="＃carouselBanner"為觸發器；data-slide-to輪播傳遞的索引值，從0開始計算；active起始點 -->
+                    <li data-target="＃carouselBanner" data-slide-to="0" class="active"></li>
+                    <li data-target="＃carouselBanner" data-slide-to="1"></li>
+                </ol>
+                <!-- carousel-inner將寬度改為100%外，透過「後代選擇器」關係使底下的圖片具有響應式 -->
+                <div class="carousel-inner">
+                    <!-- banner1 -->
+                    <!-- carousel-item使該區塊具有0.6s的過度動畫以及相關對齊屬性 此類別底下的內容預設為隱藏狀態 -->
+                    <div class="carousel-item active">
+                        <img src="./images/slider_1.jpg" alt="first slide" class="d-block w-100">
+                        <!-- carousel-caption定義圖片說明文的位置、上下內距、文字顏色、文字對齊樣式等；d-none d-md-block xs,sm尺寸會看不到 -->
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>EVA發泡板</h3>
+                            <p>依國際標準Pantone標準色卡隻色好來製作</p>
+                        </div>
+                    </div>
+                    <!-- banner2 -->
+                    <div class="carousel-item">
+                        <img src="./images/slider_2.jpg" alt="second slide" class="d-block w-100">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>廠房標準</h3>
+                            <p>高專業的製造能力</p>
+                        </div>
+                    </div>
+                    <!-- 前一頁圖示 -->
+                    <!-- href="#carouselBanner"將連結位置設為觸發器名稱；carousel-control-prev定義prev按扭的範圍與滑入樣式，此範圍也表示實際觸控的範圍 -->
+                    <!-- role="button"表述此段內容為button；data-slide="prev"為carousel的控制屬性，僅能接受prev,next兩屬性值才能透過js進行左右切換的控制 -->
+                    <a href="#carouselBanner" class="carousel-control-prev" role="button" data-slide="prev">
+                        <!-- carousel-control-prev-icon呈現箭頭符號；aria-hidden="true"隱藏文字圖示的存在, 讓螢幕朗讀軟體讀不到此 span 元素 -->
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <!-- 下一頁圖示 -->
+                    <a href="#carouselBanner" class="carousel-control-next" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- 廣告/end -->
+
     <!-- 產品分類/start -->
 
     <!-- 產品分類/end -->
