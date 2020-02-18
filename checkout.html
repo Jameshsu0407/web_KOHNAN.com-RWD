@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>岡南塑膠發泡有限公司</title>
-    <link rel="shortcut icon" type="image/png" href="./images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="./images/logo.png" />
     <!-- CSS文件載入 -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <!-- js文件載入 -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
     <!-- header/start -->
     <header class="container">
@@ -21,8 +25,8 @@
             <a class="navbar-brand" href="index.html">
                 <img src="./images/logo.png" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -57,15 +61,134 @@
         <div class="container pt-5 pb-5">
             <div class="row">
                 <!-- 結帳訊息/start -->
-                
+                <div class="col-12 mb-3">
+                    <h2>結帳</h2>
+                    <p>Thank you!感謝你的訂購！</p>
+                    <!-- alert-dismissible其屬性將調整右方內距的距離 -->
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        您目前尚登入，請點擊<a href="login.html" class="alert-link">[連結]</a>進行登入。
+                        <!-- close按鈕顯示X;data-dismiss="alert"當點擊按鈕後會關閉互動式窗 -->
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
                 <!-- 結帳訊息/end -->
+
                 <!-- 帳單資訊/start -->
-                
+                <div class="col-12 col-md-6 mb-3">
+                    <h2>帳單資訊</h2>
+                    <form action="">
+                        <div class="form-row">
+                            <!-- 姓氏 -->
+                            <div class="form-group col-md-6">
+                                <label for="LastName">
+                                    姓氏
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="LastName" required placeholder="必填，例如：葉">
+                            </div>
+                            <!-- 名字 -->
+                            <div class="form-group col-md-6">
+                                <label for="FirstName">
+                                    名字
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="FirstName" required placeholder="必填，例如：大雄">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <!-- 聯絡電話 -->
+                            <div class="form-group col-md-6">
+                                <label for="tel">
+                                    聯絡電話
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="number" class="form-control" id="tel" required
+                                    placeholder="必填，例如：0912-345-678">
+                            </div>
+                            <!-- 名字 -->
+                            <div class="form-group col-md-6">
+                                <label for="Email">
+                                    電子信箱
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <input type="email" class="form-control" id="Email" required placeholder="必填，電子信箱">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Address">
+                                地址
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="Address" required
+                                placeholder="必填，縣/市-區/鄉/鎮-路/街-號/樓">
+                        </div>
+
+                    </form>
+                </div>
                 <!-- 帳單資訊/end -->
+
                 <!-- 您的訂單/start -->
-                
+                <div class="col-12 col-md-6">
+                    <h2>您的訂單</h2>
+                    <div class="table-responsive-sm">
+                        table-striped使奇數行的tr具有背景顏色
+                        <table class="table table-bordered table-striped">
+                            <tbody>
+                                <tr>
+                                    <td>商品</td>
+                                    <td>總計</td>
+                                </tr>
+                                <tr>
+                                    <td>TUM-CL-B-0001</td>
+                                    <td>NT$&nbsp;500</td>
+                                </tr>
+                                <tr>
+                                    <td>TUM-CL-B-0001</td>
+                                    <td>NT$&nbsp;500</td>
+                                </tr>
+                                <tr>
+                                    <td>TUM-CL-B-0001</td>
+                                    <td>NT$&nbsp;500</td>
+                                </tr>
+                                <tr>
+                                    <td>小計</td>
+                                    <td>NT$&nbsp;1,500</td>
+                                </tr>
+                                <tr>
+                                    <td>運送方式</td>
+                                    <td>
+                                        <div class="form-check">
+                                            <!-- form-check-input調整radio與文字的距離 -->
+                                            <input type="radio" id="Expenses" name="tran-expenses" class="form-check-input">
+                                            <label class="form-check-label">免運費</label>
+                                        </div>
+                                        <div class="form-check checkbox">
+                                            <input type="radio" id="PostOffice" name="tran-expenses" class="form-check-input" checked>
+                                            <label class="form-check-label">郵局：NT$&nbsp;80</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>總計</td>
+                                    <td>NT$&nbsp;1,580</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <!-- colspan="2"合併儲存格 -->
+                                    <td colspan="2">
+                                        <a href="#" class="btn btn-outline-info btn-lg float-right">下單購買</a>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
                 <!-- 您的訂單/end -->
-            </div> 
+            </div>
         </div>
     </section>
     <!-- 結帳/end -->
@@ -106,4 +229,5 @@
     </footer>
     <!-- 頁腳/end -->
 </body>
+
 </html>
