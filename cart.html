@@ -57,13 +57,150 @@
         <div class="container pt-5 pb-5">
             <div class="row">
                 <!-- 產品清單/start -->
-                
+                <div class="col-12 mb-3">
+                    <h2 class="mb-3">購物車</h2>
+                    <!-- table-middle自定義，使表格下的內容改為垂直置中對齊 -->
+                    <div class="table-responsive-sm table-middle">
+                        <!-- table-bordered使表格具有邊框模式 -->
+                        <table class="table table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <!-- product- 自定義，調整寬度，小於768px圖片隱藏 -->
+                                    <th scope="col" class="product-remove">&nbsp;</th>
+                                    <th scope="col" class="product-thumbnail">圖片</th>
+                                    <th scope="col" class="product-name">名稱</th>
+                                    <th scope="col" class="product-price">價格</th>
+                                    <th scope="col" class="product-quantity">數量</th>
+                                    <th scope="col" class="product-subtotal">總計</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- 清單一 -->
+                                <tr>
+                                    <td class="product-remove">
+                                        <!-- data-toggle="tooltip"宣告要使用tooltip效果;data-placement="top"彈出訊息的方向為上方;title="是否確定要移除"彈出的訊息 -->
+                                        <a data-toggle="tooltip" data-placement="top" title="是否確定要移除" class="remove text-white">X</a>
+                                    </td>
+                                    <td class="product-thumbnail">
+                                        <a href="product.html">
+                                            <img src="./images/product/eva_1.jpg" alt="LTG-BY-0001" class="img-fluid">
+                                        </a>
+                                    </td>
+                                    <td class="product-name">
+                                        <a href="product.html">LTG-BY-0001</a>
+                                    </td>
+                                    <td class="product-price">NT$&nbsp;500</td>
+                                    <td class="product-quantity">
+                                        <input type="number" value="1">
+                                    </td>
+                                    <td class="product-subtotal">NT$&nbsp;500</td>
+                                </tr>
+                                <!-- 清單二 -->
+                                <tr>
+                                    <td class="product-remove">
+                                        <!-- data-toggle="tooltip"宣告要使用tooltip效果;data-placement="top"彈出訊息的方向為上方;title="是否確定要移除"彈出的訊息 -->
+                                        <a data-toggle="tooltip" data-placement="top" title="是否確定要移除" class="remove text-white">X</a>
+                                    </td>
+                                    <td class="product-thumbnail">
+                                        <a href="product.html">
+                                            <img src="./images/product/eva_1.jpg" alt="LTG-BY-0001" class="img-fluid">
+                                        </a>
+                                    </td>
+                                    <td class="product-name">
+                                        <a href="product.html">LTG-BY-0001</a>
+                                    </td>
+                                    <td class="product-price">NT$&nbsp;500</td>
+                                    <td class="product-quantity">
+                                        <input type="number" value="1">
+                                    </td>
+                                    <td class="product-subtotal">NT$&nbsp;500</td>
+                                </tr>
+                                <!-- 清單三 -->
+                                <tr>
+                                    <td class="product-remove">
+                                        <!-- data-toggle="tooltip"宣告要使用tooltip效果;data-placement="top"彈出訊息的方向為上方;title="是否確定要移除"彈出的訊息 -->
+                                        <a data-toggle="tooltip" data-placement="top" title="是否確定要移除" class="remove text-white">X</a>
+                                    </td>
+                                    <td class="product-thumbnail">
+                                        <a href="product.html">
+                                            <img src="./images/product/eva_1.jpg" alt="LTG-BY-0001" class="img-fluid">
+                                        </a>
+                                    </td>
+                                    <td class="product-name">
+                                        <a href="product.html">LTG-BY-0001</a>
+                                    </td>
+                                    <td class="product-price">NT$&nbsp;500</td>
+                                    <td class="product-quantity">
+                                        <input type="number" value="1">
+                                    </td>
+                                    <td class="product-subtotal">NT$&nbsp;500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
                 <!-- 產品清單/end -->
+
                 <!-- 感興趣產品/start -->
-                
+                <div class="col-12 col-md-6 d-none d-md-block mb-5">
+                    <h2 class="mb-3">您可能對此有興趣...</h2>
+                    <div class="row">
+                        <!-- 推薦商品一 -->
+                        <div class="col-6">
+                            <div class="card mb-3">
+                                <img src="./images/product/eva_2.jpg" alt="TG-B-0001" class="img-fluid">
+                                <div class="card-body">
+                                    <h4 class="card-title">TG-B-0001</h4>
+                                    <p class="card-text">登山拐杖握把，EVA發泡材質</p>
+                                    <h5 class="card-text text-danger">NT$&nbsp;500</h5>
+                                    <a href="product.html" class="btn btn-outline-secondary btn-block">查看商品</a>
+                                    <a href="cart.html" class="btn btn-outline-primary btn-block">加入購物車</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 推薦商品二 -->
+                        <div class="col-6">
+                            <div class="card mb-3">
+                                <img src="./images/product/eva_2.jpg" alt="TG-B-0001" class="img-fluid">
+                                <div class="card-body">
+                                    <h4 class="card-title">TG-B-0001</h4>
+                                    <p class="card-text">登山拐杖握把，EVA發泡材質</p>
+                                    <h5 class="card-text text-danger">NT$&nbsp;500</h5>
+                                    <a href="product.html" class="btn btn-outline-secondary btn-block">查看商品</a>
+                                    <a href="cart.html" class="btn btn-outline-primary btn-block">加入購物車</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- 感興趣產品/end -->
+
+
                 <!-- 產品統計/start -->
-                
+                <div class="col-12 col-md-6 mb-5">
+                    <h2 class="mb-3">購物車總計</h2>
+                    <div class="table-responsive-sm">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>小計</td>
+                                    <td>NT$&nbsp;1500</td>
+                                </tr>
+                                <tr class="bg-info">
+                                    <td>總計</td>
+                                    <td>NT$&nbsp;1500</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">
+                                        <a href="checkout.html" class="btn btn-outline-info btn-lg float-right">前往結帳</a>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
                 <!-- 產品統計/end -->
             </div>
         </div>
